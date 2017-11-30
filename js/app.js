@@ -5,11 +5,8 @@ window.addEventListener('load', function(event) {
   var countryMexico = document.querySelector('#mexico');
 
   function showCountry(event) {
-  // console.log(event.target.nextElementSibling);
-    event.target.nextElementSibling.classList.toggle('display-none');
+     event.target.nextElementSibling.classList.toggle('display-none');
   }
-
-
   countryChile.addEventListener('click', showCountry);
   countryPeru.addEventListener('click', showCountry);
   countryMexico.addEventListener('click', showCountry);
@@ -17,7 +14,6 @@ window.addEventListener('load', function(event) {
   /* TABS */
 
   var tabs = document.querySelectorAll('.tab');
-
   var overviewSection = document.querySelector('#overview');
   var studentsSection = document.querySelector('#students');
   var teachersSection = document.querySelector('#teachers');
@@ -48,11 +44,7 @@ window.addEventListener('load', function(event) {
     }
   }
 
-
-  console.log(tabs);
   for (var i = 0;i < tabs.length;i++) {
     tabs[i].addEventListener('click', showTab);
   }
-
-
 });
